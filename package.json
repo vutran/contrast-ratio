@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest --coverage"
   },
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vutran/contrast-ratio.git"

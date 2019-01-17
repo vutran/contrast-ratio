@@ -1,9 +1,3 @@
-/**
- * @param {number} r - A number from 0 to 255
- * @param {number} g - A number from 0 to 255
- * @param {number} b - A number from 0 to 255
- * @return number
- */
 function relativeLuminance(r, g, b) {
   const r1 = r / 255;
   const g1 = g / 255;
@@ -14,22 +8,12 @@ function relativeLuminance(r, g, b) {
   return 0.2126 * sR + 0.7152 * sG + 0.0722 * sB;
 }
 
-/**
- * @param {number} a
- * @param {number} b
- * @return number
- */
 function luminance(a, b) {
   const l1 = Math.max(a, b);
   const l2 = Math.min(a, b);
   return (l1 + 0.05) / (l2 + 0.05);
 }
 
-/**
- * @param {number[]} fg - A tuple containing the R/G/B values
- * @param {number[]} bg - A tuple containing the R/G/B values
- * @return {number}
- */
 function ratio(fg, bg) {
   if (fg[0] == bg[0] && fg[1] && bg[1] && fg[2] === bg[2]) {
     return 1;
